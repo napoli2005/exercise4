@@ -521,6 +521,10 @@ function main() {
                 {x:5,y:0,z:10,c:new Color(255,0,0,255)}, {x:0,y:-5,z:10,c:new Color(0,0,255,255)}];
 
     
+    var poly2 = [{x:-5,y:-6,z:10,c:new Color(255,0,0,255)}, {x:5,y:-8,z:8,c:new Color(0,255,0,255)},
+                 {x:-3,y:-14,z:13,c:new Color(0,255,0,255)},{x:5,y:-14,z:6,c:new Color(0,0,0,255)}];
+    
+    
     // Define and render a rectangle in 2D with colors and coords at corners
     projectPoly(imagedata,poly,view);
     fillPoly(imagedata,poly);
@@ -528,20 +532,5 @@ function main() {
     
     context.putImageData(imagedata, 0, 0); // display the image in the context
 
-    var canvas2 = document.getElementById("viewport2"); 
-    var context2 = canvas2.getContext("2d");
-    var w2 = context2.canvas.width; // as set in html
-    var h2 = context2.canvas.height;  // as set in html
-    var imagedata2 = context2.createImageData(w2,h2);
-    
 
-    var poly2 = [{x:-5,y:-6,z:10,c:new Color(255,0,0,255)}, {x:5,y:-8,z:8,c:new Color(0,255,0,255)},
-                 {x:-3,y:-14,z:13,c:new Color(0,255,0,255)},{x:5,y:-14,z:6,c:new Color(0,0,0,255)}];
-    
-
-
-    projectPoly(imagedata2,poly2,view);
-    fillPoly(imagedata2,poly2);
-    
-    context.putImageData(imagedata2, 0, 0); // display the image in the context
 }
