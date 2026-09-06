@@ -521,7 +521,7 @@ function main() {
                 {x:5,y:0,z:10,c:new Color(255,0,0,255)}, {x:0,y:-5,z:10,c:new Color(0,0,255,255)}];
 
     
-    var poly2 = [{x:-5,y:5,z:10,c:new Color(255,0,0,255)}, {x:5,y:5,z:14,c:new Color(0,255,0,255)},
+    var poly2 = [{x:-5,y:5,z:10,c:new Color(255,0,0,255)}, {x:5,y:5,z:12,c:new Color(0,255,0,255)},
                  {x:5,y:-4,z:14,c:new Color(0,0,0,255)}, {x:-5,y:-7,z:14,c:new Color(0,0,255,255)}];
     
     
