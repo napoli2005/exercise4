@@ -526,8 +526,8 @@ function main() {
     
     
     // Define and render a rectangle in 2D with colors and coords at corners
-    projectPoly(imagedata,poly2,view);
-    fillPoly(imagedata,poly2);
+    projectPoly(imagedata,poly,view);
+    fillPoly(imagedata,poly);
 
     
     context.putImageData(imagedata, 0, 0); // display the image in the context
